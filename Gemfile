@@ -12,6 +12,7 @@ gem 'compass-rails', '~> 2.0.alpha.0'
 gem 'figaro'
 gem 'simple_form', '>= 3.0.0.rc'
 gem 'zurb-foundation'
+gem 'newrelic_rpm'
 
 group :development do
   gem 'better_errors'
