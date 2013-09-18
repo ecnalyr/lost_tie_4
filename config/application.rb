@@ -36,8 +36,8 @@ module LostTie4
       :address              => "smtp.gmail.com",
       :port                 => 587,
       :domain               => ENV["DOMAIN_NAME"],
-      :user_name            => ENV["MAILER_USERNAME"],
-      :password             => ENV["MAILER_PASSWORD"],
+      :user_name            => ENV["MAILER_USER"],
+      :password             => ENV["MAILER_PASS"],
       :authentication       => :plain,
       :enable_starttls_auto => true
     }
