@@ -1,1 +1,28 @@
-<%= link_to "Lost Tie 4", root_path, :class => 'brand' %>
+<div class="nav-container contain-to-grid">
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <%= link_to image_tag("logo.png", :alt=>"logo"), root_path, :class => 'logo' %></li>
+      <li class="toggle-topbar menu-icon">
+        <a href="#">
+          <span><text class="show-for-medium">Menu</text></span>
+        </a>
+      </li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Left Nav Section -->
+
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li>
+          <%= link_to "Home", root_path, :class =>('active' if current_page?root_path) %></a>
+        </li>
+        <li>
+          <%= link_to "Portfolio", portfolio_path, :class =>('active' if current_page?portfolio_path) %>
+        </li>
+      </ul>
+    </section>
+  </nav>
+  <hr class="hide-for-small">
+</div>

@@ -1,0 +1,91 @@
+<div class="row">
+  <div class="large-9 columns">
+
+    <h3>We'd love to hear from you!</h3>
+    <p>
+      Drop us a line or shoot over an email. You can even contact a team member with a specific question. We're excited to hear about your project!
+    </p>
+    <h5 class="title" style="left: 199px;">
+      <a href="#panel2">The Team</a>
+    </h5>
+    <div class="content" data-slug="panel2" style="">
+      <ul class="large-block-grid-5">
+        <li>
+          <a href="mailto:contact@losttie.com">
+            Jason Rylance
+          </a>
+          <p>Director, Lead Developer<br>
+          361-288-4278</p>
+        </li>
+        <li>
+          <a href="mailto:contact@losttie.com">
+            Andrew Foster
+          </a>
+          <p>Graphic Design, Marketing<br>
+          210-422-2054</p>
+        </li>
+        <li>
+          <a href="mailto:contact@losttie.com">
+            Eric Whittley
+          </a>
+          <p>User Experience, Lead Technical<br>
+          512-588-2452</p>
+        </li>
+        <li>
+          <a href="mailto:contact@losttie.com">
+            Fabian Puente
+          </a>
+          <p>Graphic Design<br>
+          512-789-4653</p>
+        </li>
+      </ul>
+    </div>
+    <div class="content" data-slug="panel1" style="">
+      <%= simple_form_for @contact, :url =>
+      contacts_path do |f| %>
+      <div class="row collapse">
+        <div class="large-2 columns">
+          <label class="inline">Name</label>
+        </div>
+        <div class="large-10 columns">
+          <%= f.input :name, :label =>false, :placeholder => 'Jane Doe' %>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="large-2 columns">
+          <label class="inline">Email</label>
+        </div>
+        <div class="large-10 columns">
+          <%= f.input :email, :label =>false, :placeholder => 'jane@doeco.com' %>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="large-2 columns">
+          <label class="inline">Company</label>
+        </div>
+        <div class="large-10 columns">
+          <%= f.input :subject, :label =>false, :placeholder => 'Doe Co' %>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="large-2 columns">
+          <label class="inline">Message</label>
+        </div>
+        <div class="large-10 columns">
+          <%= f.input :message, :as =>
+          :text, :label => false, :placeholder => 'I want to build a neat website!' %>
+        </div>
+      </div>
+      <button type="submit" class="radius button">Send</button>
+      <% end %>
+    </div>
+  </div>
+  <div class="large-3 columns">
+    <h5>Phone or Email</h5>
+    <p>
+      361-288-4278
+      <br>
+      <a href="mailto:contact@losttie.com">contact@losttie.com</a>
+    </p>
+  </div>
+</div>

@@ -53,7 +53,7 @@ $default-float: left;
 
 // $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -68,6 +68,7 @@ $default-float: left;
 // Colors
 
 // $primary-color: #2ba6cb;
+$primary-color: #e69224;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
@@ -160,7 +161,7 @@ $default-float: left;
 
 // Control header font styles
 
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -1235,10 +1236,12 @@ $default-float: left;
 // Background color for the top bar
 
 // $topbar-bg: #111;
+$topbar-bg: #fff;
 
 // Height and margin
 
 // $topbar-height: 45px;
+$topbar-height: 75px;
 // $topbar-margin-bottom: emCalc(30);
 
 // Control Input height for top bar
@@ -1282,8 +1285,10 @@ $default-float: left;
 // $topbar-menu-link-weight: bold;
 // $topbar-menu-link-color: #fff;
 // $topbar-menu-icon-color: #fff;
+$topbar-menu-icon-color: #9DA0A4; 
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
+$topbar-menu-icon-color-toggled: #111;
 
 // Transitions and breakpoint styles
 
@@ -1301,3 +1306,64 @@ $default-float: left;
 // $topbar-sticky-class: ".sticky";
 
 @import 'foundation';
+
+.nav-container{
+    background: #fff;
+    border-top: 3px solid #f7f7f7;
+    .expanded ul.right{
+        a{
+            border-bottom: 1px dotted #DDD;
+            padding-left: 22.5px !important;
+            height: 45px;
+        }
+    }
+    .top-bar ul{
+        height: auto;
+        background: transparent;
+        line-height: 3.3;
+    }
+    .top-bar{
+        margin-top: 25px;
+        background: transparent;
+
+        ul > li a:not(.button){
+            color: #9DA0A4;
+            font-weight: 600;
+            padding: 0 15px 0 5px;
+            &:hover{
+                color: #232527;
+            }
+            background: transparent;
+        }
+        ul > li a:hover{
+                color: #232527;
+        }
+        ul > li a.active{
+            color: #232527;
+            background: transparent;
+        }
+        ul > li:hover, .nav-container .top-bar .top-bar ul > li.active{
+            background: transparent;
+        }
+        ul > ul{
+            background: transparent;
+        }
+
+
+    }
+    .top-bar ul li.toggle-topbar a{
+        border-color: rgba(17,17,17,.8) transparent transparent;
+    }
+}
+
+.marginalize-top{
+    margin-top: 10%;
+}
+
+h5 > span{
+    color: $primary-color;
+}
+
+.logo img{
+    max-width: 80%;
+}
