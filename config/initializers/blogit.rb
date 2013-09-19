@@ -2,10 +2,10 @@
 Blogit.configure do |config|
 
   # What kind of comments do you want to add to your blog ? (:active_record, :disqus or :no)
-  # config.include_comments = :active_record
+  config.include_comments = :disqus
 
   # When using disqus comments, what is the shortname of your forum ?
-  # config.disqus_shortname = ""
+  config.disqus_shortname = "losttie"
 
   # Should there be a share bar on every post ?
   # config.include_share_bar = false
