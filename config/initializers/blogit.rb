@@ -2,10 +2,10 @@
 Blogit.configure do |config|
 
   # What kind of comments do you want to add to your blog ? (:active_record, :disqus or :no)
-  # config.include_comments = :active_record
+  config.include_comments = :disqus
 
   # When using disqus comments, what is the shortname of your forum ?
-  # config.disqus_shortname = ""
+  config.disqus_shortname = "losttie"
 
   # Should there be a share bar on every post ?
   # config.include_share_bar = false
@@ -52,10 +52,10 @@ Blogit.configure do |config|
   # config.highlight_code_syntax = true
 
   # RSS Feed title content
-  # config.rss_feed_title = "A blog about ponies!"
+  config.rss_feed_title = "Lost Tie Web Development!"
 
   # RSS Feed description content
-  # config.rss_feed_description = "Get your daily pony news here!"
+  config.rss_feed_description = "Articles from developers at Lost Tie"
 
   # Should blogit ping search engines with your sitemap
   # when posts are created, updated or destroyed?
