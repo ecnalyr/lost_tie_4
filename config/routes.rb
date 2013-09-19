@@ -1,5 +1,8 @@
 LostTie4::Application.routes.draw do
   devise_for :users
+	
+	mount Blogit::Engine => "/blog"
+
 	root :to => "home#index"
 
 	get 'contact' => 'contact#new'

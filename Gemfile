@@ -13,6 +13,8 @@ gem 'simple_form', '>= 3.0.0.rc'
 gem 'zurb-foundation'
 gem 'pg'
 gem 'devise'
+gem 'blogit', :git => "git://github.com/KatanaCode/blogit.git", :branch => 'rails4'
+gem "acts-as-taggable-on", github: "mbleigh/acts-as-taggable-on"
 
 group :production do
   gem 'newrelic_rpm'
