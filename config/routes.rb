@@ -1,7 +1,7 @@
 LostTie4::Application.routes.draw do
   devise_for :users
 	
-	mount Blogit::Engine => "/blog"
+	mount Blogit::Engine => "/blog", as: "blogit_engine"
 
 	root :to => "home#index"
 
