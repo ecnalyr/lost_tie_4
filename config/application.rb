@@ -43,7 +43,7 @@ module LostTie4
     }
 
     config.action_mailer.default_url_options = {
-      :host => "losttie.dev"
+      :host => "localhost:3000"
     }
   end
 end
