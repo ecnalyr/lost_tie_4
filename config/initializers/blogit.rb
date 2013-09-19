@@ -52,10 +52,10 @@ Blogit.configure do |config|
   # config.highlight_code_syntax = true
 
   # RSS Feed title content
-  # config.rss_feed_title = "A blog about ponies!"
+  config.rss_feed_title = "Lost Tie Web Development!"
 
   # RSS Feed description content
-  # config.rss_feed_description = "Get your daily pony news here!"
+  config.rss_feed_description = "Articles from developers at Lost Tie"
 
   # Should blogit ping search engines with your sitemap
   # when posts are created, updated or destroyed?
