@@ -12,6 +12,7 @@ gem 'figaro'
 gem 'simple_form', '>= 3.0.0.rc'
 gem 'zurb-foundation'
 gem 'pg'
+gem 'devise'
 
 group :production do
   gem 'newrelic_rpm'
