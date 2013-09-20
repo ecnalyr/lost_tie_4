@@ -79,4 +79,6 @@ LostTie4::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.action_mailer.default_url_options = { :host => "losttie.dev" }
+
+  ENV["DATABASE_URL"] = "postgres://uaopecnzdiwfhh:oz-HgnU7vMIK-UnQyVDjgJqlmr@ec2-23-23-211-161.compute-1.amazonaws.com:5432/d8onp8okb9f21t"
 end
