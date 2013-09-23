@@ -1,4 +1,8 @@
 LostTie4::Application.routes.draw do
+  resources :entries
+
+  resources :categories
+
   devise_for :users
 	
 	mount Blogit::Engine => "/blog", as: "blogit_engine"
