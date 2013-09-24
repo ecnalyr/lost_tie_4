@@ -4,12 +4,12 @@ $(document).ready(function() {
 		$(this).parent().addClass('current');  
 		var filterVal = $(this).text().toLowerCase().replace(' ','-'); 
 		if(filterVal == 'all') {  
-		    $('ul#portfolio li.hidden').fadeIn('slow').removeClass('hidden');  
+		    $('div#portfolio div.hidden').fadeIn('slow').removeClass('hidden');  
 		}  
 		else {  
-		    $('ul#portfolio li').each(function() {  
+		    $('div#portfolio div').each(function() {  
 		        if(!$(this).hasClass(filterVal)) {  
-		            $(this).fadeOut('normal').addClass('hidden');  
+		            $(this).fadeOut('slow').addClass('hidden');  
 		        } else {  
 		            $(this).fadeIn('slow').removeClass('hidden');  
 		        }  
