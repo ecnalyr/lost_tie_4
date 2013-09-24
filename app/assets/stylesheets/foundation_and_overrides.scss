@@ -150,6 +150,7 @@ $primary-color: #e69224;
 
 // $block-grid-elements: 12;
 // $block-grid-default-spacing: emCalc(20);
+$block-grid-default-spacing: emCalc(2);
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
 
@@ -1367,4 +1368,33 @@ h5 > span{
 
 .logo img{
     max-width: 80%;
+}
+
+/* -----------------------------------------
+   Portfolio
+----------------------------------------- */
+.entry-container {
+    position: relative;
+    float: left;
+}
+
+.entry-container span {
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    width: 100%;
+    left: 0;
+    line-height: 30px;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+
+}
+
+.entry-container:hover span {
+    opacity: 1;
 }
