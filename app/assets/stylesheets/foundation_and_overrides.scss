@@ -1398,3 +1398,6 @@ h5 > span{
 .entry-container:hover span {
     opacity: 1;
 }
+
+ul#filter li.current a, ul#filter a:hover { text-decoration: underline; }  
+ul#filter li.current a { color: #333; font-weight: bold; }  

@@ -1,4 +1,10 @@
-<ul class="small-block-grid-2 large-block-grid-3">
+<ul id="filter">  
+    <li class="current"><a href="#">All</a></li>  
+    <% @categories.each do |category| %>
+      <li><a href="#"><%= category.name %></a></li>
+    <% end %> 
+</ul>  
+<ul id="portfolio" class="small-block-grid-2 large-block-grid-3">
   <% @entries.each do |entry| %>
     <li class="<% entry.categories.each do |c| %><%= c.name.downcase.gsub(' ', '-')+' ' %><% end %>">
       <a href="<%= entry.blog_url %>">
