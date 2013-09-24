@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20130923140123) do
     t.datetime "updated_at"
   end
 
-  create_table "categories_entries", force: true do |t|
+  create_table "categories_entries", id: false, force: true do |t|
     t.integer "entry_id"
     t.integer "category_id"
   end
