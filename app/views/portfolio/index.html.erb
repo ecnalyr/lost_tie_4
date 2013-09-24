@@ -1,6 +1,6 @@
 <ul class="small-block-grid-2 large-block-grid-3">
   <% @entries.each do |entry| %>
-    <li class="">
+    <li class="<% entry.categories.each do |c| %><%= c.name.downcase.gsub(' ', '-')+' ' %><% end %>">
       <a href="<%= entry.blog_url %>">
         <div class="entry-container">
           <img src="<%= entry.image_url -%>" class="entry">
