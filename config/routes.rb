@@ -4,15 +4,14 @@ LostTie4::Application.routes.draw do
   resources :categories
 
   devise_for :users
-	
-	mount Blogit::Engine => "/blog", as: "blogit_engine"
 
-	root :to => "home#index"
+  mount Blogit::Engine => '/blog', as: 'blogit_engine'
 
-	get 'contact' => 'contact#new'
-	post 'contact' => 'contact#create'
+  root to: 'home#index'
 
+  get 'contact' => 'contact#new'
+  post 'contact' => 'contact#create'
 
-	resources :portfolio, :only => :index
+  resources :portfolio, only: :index
   get '/portfolio' => 'portfolio#index'
 end
